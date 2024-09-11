@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Proza+Libre:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-family: "Open Sans", sans-serif;
+}
+
+h1,h2{
+    font-family: "Proza Libre", sans-serif;
+    color: rgb(50, 50, 50);
+}
+
+p{
+    color: rgb(50, 50, 50);
+}
+
+.container{
+    width: 90%;
+    max-width: 1440px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 1rem 0;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100px;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    width: 50%;
+    justify-content: space-around;
+}
+
+li a{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+
+.header--about{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    height: fit-content;
+}
+
+.header--about p{
+    line-height: 1.5rem;
+    font-size: 1.1rem;
+}
+
+.header--figure{
+    width: 80%;
+    max-width: 250px;
+    max-height: 500px;
+    margin: 2rem auto 0;
+    overflow: hidden;
+}
+
+.header--figure img{
+    display: block;
+    width: 100%;
+    object-fit: cover;
+}
+
+.header--projects{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.projects--gal figure{
+    margin-top: 1rem;
+    width: 200px;
+    height: 150px;
+    overflow: hidden;
+}
+
+.projects--gal figure img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.header--skills{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.logos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.logos i{
+    display: block;
+    font-size: 2rem;
+}
+
+footer{
+    margin-top: 3rem;
+}
+.footer--p{
+    text-align: center;
+}
+
+.heart{
+    color: red;
+}
+
+
+@media (max-width:600px) {
+    nav ul{
+        display: none;
+    }
+}
+
+@media (min-width:600px){
+
+    .container{
+        width: 80%;
+    }
+
+    nav ul{
+        width: 30%;
+    }
+    .about{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .header--about{
+        width: 50%;
+    }
+
+    .header--figure{
+        width: 50%;
+        max-width: 250px;
+        max-height: 500px;
+    }
+}
+
+
+
+
+
